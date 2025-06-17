@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "src-tauri",         # Backend Tauri
+    "crates/protocols",  # Crate with protocols
+    "crates/connection", # Crate with connection manager
+    "crates/logger"      # Crate with logger
+]
+
+# Opcjonalne wspólne zależności dla całego workspace
+[workspace.dependencies]
+serde = "1.0"
+tokio = { version = "1.0", features = ["full"] }
